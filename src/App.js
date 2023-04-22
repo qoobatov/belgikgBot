@@ -3,10 +3,10 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h1>Введите свой Login:</h1>
+      <h1>Ermek, введи логин:</h1>
       <div>
         <form action="">
-            <input type="text" />
+          <input type="text" />
         </form>
       </div>
     </div>
