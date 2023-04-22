@@ -3,13 +3,12 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h1>Privet</h1>
-      <form action="">
-        <label>
-          Введите свой логин:
-          <input type="text" />
-        </label>
-      </form>
+      <h1>Login:</h1>
+      <div>
+        <form action="">
+            <input type="text" />
+        </form>
+      </div>
     </div>
   );
 }
