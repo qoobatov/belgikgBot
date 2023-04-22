@@ -3,7 +3,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h1>Ermek, введи логин:</h1>
+      <h1>Введите логин и пароль:</h1>
       <div>
         <form action="">
           <input type="text" />
