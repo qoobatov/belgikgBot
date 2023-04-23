@@ -1,3 +1,10 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 .ant-form-horizontal {
   /* background-color: #e7e7e9; */
   width: 330px;

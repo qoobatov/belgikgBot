@@ -28,7 +28,8 @@ function Login() {
   };
 
   return (
-    <>
+    <div className="login-container">
+        <h3>Введите логин и пароль:</h3>
       <Form
         name="basic"
         initialValues={{
@@ -79,7 +80,7 @@ function Login() {
           </div>
         </Form.Item>
       </Form>
-    </>
+    </div>
   );
 }
 
