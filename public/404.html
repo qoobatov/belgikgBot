@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>My GitHub Pages Site</title>
   </head>
   <body>
@@ -13,15 +13,15 @@
 
     <script>
       // Загрузка приложения React
-      const App = require('./build/main.js').default;
+      const App = require("./build/main.js").default;
 
       // Настройка роутера
       const { BrowserRouter } = ReactRouterDOM;
       ReactDOM.render(
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <BrowserRouter basename={process.env.qoobatov.belgikgBot}>
           <App />
         </BrowserRouter>,
-        document.getElementById('root')
+        document.getElementById("root")
       );
     </script>
   </body>
