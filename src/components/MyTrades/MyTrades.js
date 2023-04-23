@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import "./MyTrades.css";
 
 function MyTrades() {
   return (
-    <div>MyTrades</div>
-  )
+    <div className="my-trades">
+      <div>
+        <button>Мои сделки</button>
+        <button>Оформить заказ</button>
+      </div>
+    </div>
+  );
 }
 
-export default MyTrades
+export default MyTrades;
