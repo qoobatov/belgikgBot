@@ -1,0 +1,66 @@
+.ant-form-horizontal {
+    background-color: #e7e7e9;
+    width: 550px;
+    height: 480px;
+    margin: auto;
+    padding: 80px 35px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  }
+  
+  .ant-form-item-control-input-content {
+    max-width: 600px;
+  }
+  
+  #basic_username {
+    height: 50px;
+    border-radius: 25px;
+    font-size: 18px;
+  }
+  .ant-input-password {
+    height: 50px;
+    border-radius: 25px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .btn-and-forgot-pass-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .ant-checkbox-wrapper-in-form-item {
+    color: #205b9b;
+    margin-bottom: 30px;
+    margin-top: 15px;
+  }
+  .ant-form label {
+    font-size: 20px;
+  }
+  
+  .ant-checkbox .ant-checkbox-inner {
+    width: 23px;
+    height: 23px;
+  }
+  
+  .ant-btn {
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 25px;
+    background-color: #1976d2;
+  }
+  
+  .login-form-forgot {
+    font-size: 20px;
+    color: #205b9b;
+  }
+  
+  .ant-form-item .ant-form-item-explain-error {
+    font-size: 17px;
+  }
+  
