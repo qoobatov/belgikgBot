@@ -1,12 +1,12 @@
 .ant-form-horizontal {
     background-color: #e7e7e9;
-    width: 550px;
-    height: 480px;
+    width: 450px;
+    height: 460px;
     margin: auto;
     padding: 80px 35px;
     display: flex;
     flex-direction: column;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   }
   
@@ -16,12 +16,12 @@
   
   #basic_username {
     height: 50px;
-    border-radius: 25px;
+    /* border-radius: 25px; */
     font-size: 18px;
   }
   .ant-input-password {
     height: 50px;
-    border-radius: 25px;
+    /* border-radius: 25px; */
     font-size: 18px;
     margin-top: 20px;
   }
@@ -48,10 +48,10 @@
   
   .ant-btn {
     height: 50px;
-    border-radius: 25px;
+    /* border-radius: 25px; */
     border: none;
     font-size: 18px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     background-color: #1976d2;
   }
   
