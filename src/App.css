@@ -1,16 +1,16 @@
 * {
   margin: 0;
-  box-sizing: border-box ;
+  box-sizing: border-box;
 }
 
-body{
-background-color: var(--tg-theme-bg-color);
-color: var(--tg-theme-text-color);
+body {
+  background-color: var(--tg-theme-bg-color);
+  color: var(--tg-theme-text-color);
 }
 
 .app {
   display: flex;
   justify-content: center;
-  text-align: center;
-
+  align-items: center;
+  height: 100vh;
 }
