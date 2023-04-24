@@ -1,6 +1,10 @@
-.my-trades {
+.my-trades-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.btn-mytrades {
+  margin-right: 10px;
 }

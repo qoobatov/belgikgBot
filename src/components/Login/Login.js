@@ -15,7 +15,7 @@ function Login() {
       (user) => user.username === username && user.password === password
     );
     if (employee) {
-      navigate("/mytrades/");
+      navigate("/mytrades");
       // Перенаправляем на другую страницу
     } else {
       setError(true);

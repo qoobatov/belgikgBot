@@ -1,12 +1,17 @@
 import React from "react";
 import "./MyTrades.css";
+import { Button } from "antd";
 
 function MyTrades() {
   return (
-    <div className="my-trades">
+    <div className="my-trades-container">
       <div>
-        <button>Мои сделки</button>
-        <button>Оформить заказ</button>
+        <Button type="primary" htmlType="submit" className="btn-mytrades">
+          Мои сделки
+        </Button>
+        <Button type="primary" htmlType="submit">
+          Мои сделки
+        </Button>
       </div>
     </div>
   );
