@@ -21,7 +21,7 @@
 // export default App;
 
 import "./App.css";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./components/Login/Login";
 import MyTrades from "./components/MyTrades/MyTrades";
 
@@ -33,6 +33,7 @@ return (
 <Routes>
 <Route path="/belgikgBot" element={<Login />} />
 <Route path="/belgikgBot/mytrades" element={<MyTrades />} />
+<Route path="/*" element={<Navigate to="/belgikgBot" />} />
 </Routes>
 </Router>
 </div>

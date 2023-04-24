@@ -15,7 +15,7 @@ function Login() {
       (user) => user.username === username && user.password === password
     );
     if (employee) {
-      navigate("/belgikgBot/mytrades");
+      navigate("/belgikgBot/mytrades/");
       // Перенаправляем на другую страницу
     } else {
       setError(true);
