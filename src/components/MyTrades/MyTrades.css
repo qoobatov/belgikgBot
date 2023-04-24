@@ -4,7 +4,19 @@
   align-items: center;
   height: 100vh;
 }
+.my-trades-content{
+    width: 330px;
+    height: 220px;
+    padding: 15px 10px;
+    /* display: flex;
+    flex-direction: column; */
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
 
 .btn-mytrades {
-  margin-right: 10px;
+  margin-right: 15px;
+}
+
+.my-trades-description {
+  padding: 10px 0px;
 }

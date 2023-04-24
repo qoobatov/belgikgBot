@@ -5,9 +5,9 @@ import { Button } from "antd";
 function MyTrades() {
   return (
     <div className="my-trades-container">
-      <div>
+      <div className="my-trades-content">
         <h3>Сделки или оформить заказ:</h3>
-        <p>Если у вас нету текущих сделок, вы можете оформить заказ</p>
+        <p className="my-trades-description">Если у вас нету текущих сделок, вы можете оформить заказ</p>
 
         <Button type="primary" htmlType="submit" className="btn-mytrades">
           Мои сделки
