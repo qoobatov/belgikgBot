@@ -6,11 +6,14 @@ function MyTrades() {
   return (
     <div className="my-trades-container">
       <div>
+        <h3>Сделки или оформить заказ:</h3>
+        <p>Если у вас нету текущих сделок, вы можете оформить заказ</p>
+
         <Button type="primary" htmlType="submit" className="btn-mytrades">
           Мои сделки
         </Button>
         <Button type="primary" htmlType="submit">
-          Мои сделки
+          Оформить заказ
         </Button>
       </div>
     </div>
