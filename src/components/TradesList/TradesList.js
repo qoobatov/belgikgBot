@@ -1,8 +1,20 @@
 import React from "react";
 import "./TradeList.css";
+import { useState} from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "antd";
 
 function TradesList() {
+
+    const navigate = useNavigate()
+    const [showTradeList, setshowTradeList] = useState(false); 
+  
+    const handleClick = () => {
+      setshowTradeList(true)
+        navigate('/mytrades')
+  };
+
+
   return (
     <div className="trade-list-container">
       <div className="trade-list-content">
@@ -37,9 +49,10 @@ function TradesList() {
             подробнее
           </Button>
         </div>
-      <Button type="primary" htmlType="submit" className="btn-trade-list">
+      <Button type="primary" htmlType="submit" className="btn-trade-list-back" onClick={handleClick}>
         назад
       </Button>
+      {showTradeList && navigate('/mytrades')}
       </div>
     </div>
   );
