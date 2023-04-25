@@ -57,9 +57,9 @@ function BayerServices() {
             <Form.Item label="Тип товара:">
               <CheckboxGroup options={options} onChange={handleChangeType} />
 
-              <Form.Item  label="Цена за шт.  (выбрать валюту):">
+              <Form.Item label="Цена за шт.  (выбрать валюту):">
                 <div className="quantity-currency">
-                  <Input type="number"  style={{ width: "240px" }} autofocus />
+                  <Input type="number" style={{ width: "240px" }} autofocus />
                   <Select defaultValue="KGZ" style={{ width: 80 }}>
                     <Option value="GBP">KGZ</Option>
                     <Option value="USD">USD</Option>
@@ -106,6 +106,15 @@ function BayerServices() {
             </Form.Item>
           </Form>
 
+          <Button
+            type="primary"
+            htmlType="submit"
+            className="btn-bayer-services-back"
+            onClick={onClickBackNewOrder}
+            style={{marginBottom: "10px"}}
+          >
+            отправить
+          </Button>
           <Button
             type="primary"
             htmlType="submit"
