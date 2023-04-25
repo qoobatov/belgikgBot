@@ -12,6 +12,9 @@
 .ant-select-selection-item {
   color: black;
 }
+.ant-form-vertical .ant-form-item-label{
+    padding: 5px 0 0px;
+}
 
 .bayer-services-container {
   display: flex;
@@ -31,7 +34,7 @@
 
 .bayer-services-content h3 {
   text-align: center;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .ant-form-item {
