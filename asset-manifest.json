@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/belgikgBot/static/css/main.9af372b6.css",
-    "main.js": "/belgikgBot/static/js/main.7d26b0cd.js",
+    "main.js": "/belgikgBot/static/js/main.663c0432.js",
     "index.html": "/belgikgBot/index.html",
     "main.9af372b6.css.map": "/belgikgBot/static/css/main.9af372b6.css.map",
-    "main.7d26b0cd.js.map": "/belgikgBot/static/js/main.7d26b0cd.js.map"
+    "main.663c0432.js.map": "/belgikgBot/static/js/main.663c0432.js.map"
   },
   "entrypoints": [
     "static/css/main.9af372b6.css",
-    "static/js/main.7d26b0cd.js"
+    "static/js/main.663c0432.js"
   ]
 }
