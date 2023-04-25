@@ -59,7 +59,7 @@ function BayerServices() {
 
               <Form.Item label="Цена за шт.  (выбрать валюту):">
                 <div className="quantity-currency">
-                  <Input type="number" style={{ width: "240px" }} />
+                  <Input type="number" autofocus style={{ width: "240px" }} />
                   <Select defaultValue="KGZ" style={{ width: 80 }}>
                     <Option value="GBP">KGZ</Option>
                     <Option value="USD">USD</Option>
