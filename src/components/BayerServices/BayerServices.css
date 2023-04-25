@@ -1,6 +1,4 @@
-* {
-  color: var(--tg-theme-text-color);
-}
+
 
 .ant-form-item .ant-form-item-label > label {
   color: var(--tg-theme-text-color);
