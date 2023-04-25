@@ -70,7 +70,7 @@ function BayerServices() {
                 label="Цена за шт.  (выбрать валюту):"
                 style={{ display: "flex" }}
               >
-                <Input type="number" style={{ width: "250px" }} />
+                <Input type="number" style={{ width: "240px" }} />
                 <Select defaultValue="KGZ" style={{ width: 80 }}>
                   <Option value="GBP">KGZ</Option>
                   <Option value="USD">USD</Option>
@@ -85,7 +85,7 @@ function BayerServices() {
               </Form.Item>
             </Form.Item>
             <Form.Item label="Дата:">
-              <DatePicker style={{ width: "330px" }} />
+              <DatePicker style={{ width: "320px" }} />
             </Form.Item>
             <Form.Item label="Адрес доставки:">
               <Input />
