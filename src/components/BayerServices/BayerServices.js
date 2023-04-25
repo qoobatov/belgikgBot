@@ -86,7 +86,7 @@ function BayerServices() {
               </Form.Item>
             </Form.Item>
             <Form.Item label="Дата:">
-              <DatePicker style={{ width: "320px" }} />
+              <DatePicker style={{ width: "320px" }} placeholder="выбор даты"/>
             </Form.Item>
             <Form.Item label="Адрес доставки:">
               <Input />
