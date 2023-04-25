@@ -43,7 +43,8 @@ function BayerServices() {
           <h3>Услуги байера:</h3>
           <Form
             labelCol={{
-              span: 15, color: "red"
+              span: 15,
+              color: "red",
             }}
             wrapperCol={{
               span: 25,
@@ -53,22 +54,10 @@ function BayerServices() {
               maxWidth: 600,
             }}
           >
-            <Form.Item label="Тип товара">
+            <Form.Item label="Тип товара:">
               <CheckboxGroup options={options} onChange={handleChangeType} />
 
-              {/* <Select>
-                <Select.Option value="female">Женский</Select.Option>
-                <Select.Option value="male">Мужской</Select.Option>
-                <Select.Option value="kids">Детский</Select.Option>
-                <Select.Option value="kids">Все</Select.Option>
-              </Select> */}
-              <Form.Item label="Описание товара:">
-                <TextArea rows={3} />
-              </Form.Item>
-
-              <Form.Item
-                label="Цена за шт.  (выбрать валюту):"
-              >
+              <Form.Item label="Цена за шт.  (выбрать валюту):">
                 <div className="quantity-currency">
                   <Input type="number" style={{ width: "240px" }} />
                   <Select defaultValue="KGZ" style={{ width: 80 }}>
@@ -84,9 +73,12 @@ function BayerServices() {
               <Form.Item label="Количество:">
                 <Input type="number" />
               </Form.Item>
+              <Form.Item label="Описание товара:">
+                <TextArea rows={3} />
+              </Form.Item>
             </Form.Item>
             <Form.Item label="Дата:">
-              <DatePicker style={{ width: "320px" }} placeholder="выбор даты"/>
+              <DatePicker style={{ width: "320px" }} placeholder="выбор даты" />
             </Form.Item>
             <Form.Item label="Адрес доставки:">
               <Input />
@@ -95,7 +87,7 @@ function BayerServices() {
               <Input />
             </Form.Item>
             <Form.Item
-              label="Прикрепить фото"
+              label="Прикрепить фото:"
               valuePropName="fileList"
               getValueFromEvent={normFile}
             >
