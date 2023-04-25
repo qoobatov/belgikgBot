@@ -43,7 +43,7 @@ function BayerServices() {
           <h3>Услуги байера:</h3>
           <Form
             labelCol={{
-              span: 15,
+              span: 15, color: "red"
             }}
             wrapperCol={{
               span: 25,
