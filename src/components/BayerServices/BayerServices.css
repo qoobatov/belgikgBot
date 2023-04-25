@@ -1,4 +1,4 @@
-*{
+* {
   color: var(--tg-theme-text-color);
 }
 
@@ -11,6 +11,10 @@
 }
 .ant-upload-wrapper {
   color: var(--tg-theme-text-color);
+}
+
+.ant-select-selection-item {
+  color: black;
 }
 
 .bayer-services-container {
