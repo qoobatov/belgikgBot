@@ -68,16 +68,17 @@ function BayerServices() {
 
               <Form.Item
                 label="Цена за шт.  (выбрать валюту):"
-                style={{ display: "flex" }}
               >
-                <Input type="number" style={{ width: "240px" }} />
-                <Select defaultValue="KGZ" style={{ width: 80 }}>
-                  <Option value="GBP">KGZ</Option>
-                  <Option value="USD">USD</Option>
-                  <Option value="EUR">EUR</Option>
-                  <Option value="RUB">RUB</Option>
-                  <Option value="KZT">KZT</Option>
-                </Select>
+                <div className="quantity-currency">
+                  <Input type="number" style={{ width: "240px" }} />
+                  <Select defaultValue="KGZ" style={{ width: 80 }}>
+                    <Option value="GBP">KGZ</Option>
+                    <Option value="USD">USD</Option>
+                    <Option value="EUR">EUR</Option>
+                    <Option value="RUB">RUB</Option>
+                    <Option value="KZT">KZT</Option>
+                  </Select>
+                </div>
               </Form.Item>
 
               <Form.Item label="Количество:">
