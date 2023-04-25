@@ -5,16 +5,29 @@
   align-items: center;
   height: 100vh;
 }
-.ant-form-horizontal {
-  /* background-color: #e7e7e9; */
+/* .ant-form-horizontal {
   width: 330px;
   height: 220px;
   padding: 15px 10px;
   display: flex;
   flex-direction: column;
-  /* border-radius: 15px; */
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+} */
+
+.login-content{
+  width: 330px;
+  max-height: 650px;
+  padding: 10px 5px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  display: flex;
+  flex-direction: column;
 }
+
+.login-content h3 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
 /*   
   .ant-form-item-control-input-content {
     max-width: 600px;
@@ -31,11 +44,11 @@
   font-size: 18px;
 }
 
-.btn-and-forgot-pass-container {
+/* .btn-and-forgot-pass-container {
   display: flex;
   flex-direction: column;
   text-align: center;
-}
+} */
 /*   
   .ant-checkbox-wrapper-in-form-item {
     color: #205b9b;
@@ -53,18 +66,17 @@
 
 .ant-btn {
   height: 40px;
-  /* border-radius: 25px; */
   border: none;
   font-size: 18px;
   background-color: #1976d2;
   border-radius: none;
 }
 
-.login-form-forgot {
+/* .login-form-forgot {
   font-size: 20px;
   color: #205b9b;
-}
+} */
 
-.ant-form-item .ant-form-item-explain-error {
+/* .ant-form-item .ant-form-item-explain-error {
   font-size: 17px;
-}
+} */

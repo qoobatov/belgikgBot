@@ -29,57 +29,59 @@ function Login() {
 
   return (
     <div className="login-container">
-      <h3>Введите логин и пароль:</h3>
-      <Form
-        name="basic"
-        initialValues={{
-          remember: true,
-        }}
-        onFinish={onFinish}
-        onFinishFailed={onFinishFailed}
-        autoComplete="off"
-      >
-        {error && (
-          <span style={{ color: "red", margin: "0 auto", fontSize: "17px" }}>
-            Неверный логин или пароль:
-          </span>
-        )}
-        <Form.Item
-          name="username"
-          placeholder="Username"
-          rules={[
-            {
-              required: true,
-              message: "Пожалуйста, введите логин",
-            },
-          ]}
+      <div className="login-content">
+        <h3>Введите логин и пароль:</h3>
+        <Form
+          name="basic"
+          initialValues={{
+            remember: true,
+          }}
+          onFinish={onFinish}
+          onFinishFailed={onFinishFailed}
+          autoComplete="off"
         >
-          <Input placeholder="Login" />
-        </Form.Item>
+          {error && (
+            <span style={{ color: "red", margin: "0 auto", fontSize: "17px" }}>
+              Неверный логин или пароль:
+            </span>
+          )}
+          <Form.Item
+            name="username"
+            placeholder="Username"
+            rules={[
+              {
+                required: true,
+                message: "Пожалуйста, введите логин",
+              },
+            ]}
+          >
+            <Input placeholder="Login" />
+          </Form.Item>
 
-        <Form.Item
-          name="password"
-          rules={[
-            {
-              required: true,
-              message: "Пожалуйста, введите пароль",
-            },
-          ]}
-        >
-          <Input.Password placeholder="Пароль" />
-        </Form.Item>
+          <Form.Item
+            name="password"
+            rules={[
+              {
+                required: true,
+                message: "Пожалуйста, введите пароль",
+              },
+            ]}
+          >
+            <Input.Password placeholder="Пароль" />
+          </Form.Item>
 
-        <Form.Item>
-          <div className="btn-and-forgot-pass-container">
-            <Button type="primary" htmlType="submit">
-              Войти
-            </Button>
-            {/* <a className="login-form-forgot" href="">
+          <Form.Item>
+            <div className="btn-and-forgot-pass-container">
+              <Button type="primary" htmlType="submit">
+                Войти
+              </Button>
+              {/* <a className="login-form-forgot" href="">
             Забыли пароль?
         </a> */}
-          </div>
-        </Form.Item>
-      </Form>
+            </div>
+          </Form.Item>
+        </Form>
+      </div>
     </div>
   );
 }

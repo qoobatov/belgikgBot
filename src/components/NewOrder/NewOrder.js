@@ -7,10 +7,15 @@ import { Button } from "antd";
 function NewOrder() {
   const navigate = useNavigate();
   const [showTradeList, setshowTradeList] = useState(false);
+  const [showBayerServices, setshowBayerServices] = useState(false);
 
-  const handleClick = () => {
+  const handleClickBack = () => {
     setshowTradeList(true);
     navigate("/mytrades");
+  };
+  const onClickBayerServices = () => {
+    setshowBayerServices(true);
+    navigate("/bayerservices");
   };
 
   return (
@@ -19,7 +24,7 @@ function NewOrder() {
         <div className="new-order-content">
           <h3>Байер и производство:</h3>
           <div className="new-order-btn-group">
-            <Button type="primary" htmlType="submit" className="btn-new-order">
+            <Button type="primary" htmlType="submit" className="btn-new-order" onClick={onClickBayerServices}>
               Услуги байера
             </Button>
 
@@ -31,11 +36,12 @@ function NewOrder() {
             type="primary"
             htmlType="submit"
             className="btn-new-order-back"
-            onClick={handleClick}
+            onClick={handleClickBack}
           >
             назад
           </Button>
           {showTradeList && navigate("/mytrades")}
+          {showBayerServices && navigate("/bayerservices")}
         </div>
       </div>
     </>
