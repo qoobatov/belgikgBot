@@ -14,7 +14,7 @@
 }
 
 .ant-select-selection-item {
-  color: black;
+    color: var(--tg-theme-text-color);
 }
 
 .bayer-services-container {
