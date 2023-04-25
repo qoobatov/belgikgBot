@@ -72,7 +72,7 @@ function Login() {
 
           <Form.Item>
             <div className="btn-and-forgot-pass-container">
-              <Button type="primary" htmlType="submit">
+              <Button type="primary" htmlType="submit" className="btn-login">
                 Войти
               </Button>
               {/* <a className="login-form-forgot" href="">
