@@ -36,7 +36,6 @@ function MyTrades() {
           </Button>
           <Button
             type="primary"
-            htmlType="submit"
             onClick={handleClickNewOrder}
           >
             Оформить заказ

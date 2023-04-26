@@ -40,6 +40,8 @@
 .btns-bayer-services{
 display: flex;
 justify-content: space-between;
+margin-top: 10px;
+
 }
 
 .btn-bayer-services-back{

@@ -21,14 +21,14 @@
 .new-order-btn-group {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .btn-new-order {
   margin-bottom: 15px;
 }
 .btn-new-order-text-to-employee{
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 
