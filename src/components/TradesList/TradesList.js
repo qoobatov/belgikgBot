@@ -49,7 +49,7 @@ function TradesList() {
             подробнее
           </Button>
         </div>
-      <Button type="primary" className="btn-trade-list-text-to-employee" onClick={handleClick}>
+      <Button type="primary" className="btn-trade-list-text-to-employee">
         написать сотруднику
       </Button>
       <Button type="primary" className="btn-trade-list-back" onClick={handleClick}>

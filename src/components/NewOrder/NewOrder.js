@@ -34,7 +34,6 @@ function NewOrder() {
           </div>
           <Button
             type="primary"
-            htmlType="submit"
             className="btn-new-order-text-to-employee"
           >
             Написать сотруднику

@@ -42,7 +42,7 @@ function MyTrades() {
             Оформить заказ
           </Button>
         </div>
-        <Button type="primary" className="btn-trade-list-text-to-employee" onClick={handleClick}>
+        <Button type="primary" className="btn-trade-list-text-to-employee">
         Написать сотруднику
       </Button>
         {showTradeList && navigate("/tradelist")}
