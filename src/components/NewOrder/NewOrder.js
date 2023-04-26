@@ -35,6 +35,12 @@ function NewOrder() {
           <Button
             type="primary"
             htmlType="submit"
+            className="btn-new-order-text-to-employee"
+          >
+            Написать сотруднику
+          </Button>
+          <Button
+            type="primary"
             className="btn-new-order-back"
             onClick={handleClickBack}
           >

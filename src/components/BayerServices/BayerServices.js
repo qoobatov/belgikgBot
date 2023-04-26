@@ -109,20 +109,27 @@ function BayerServices() {
           <Button
             type="primary"
             htmlType="submit"
-            className="btn-bayer-services-back"
-            onClick={onClickBackNewOrder}
+            className="btn-bayer-services-send-form"
             style={{marginBottom: "10px"}}
           >
             отправить
           </Button>
+          <div className="btns-bayer-services">
           <Button
             type="primary"
-            htmlType="submit"
             className="btn-bayer-services-back"
             onClick={onClickBackNewOrder}
           >
             назад
           </Button>
+          <Button
+            type="primary"
+            htmlType="submit"
+            className="btn-bayer-services-text-to-employee"
+          >
+            написать сотруднику
+          </Button>
+          </div>
           {showNewOrder && navigate("/neworder")}
         </div>
       </div>

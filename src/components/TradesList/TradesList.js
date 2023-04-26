@@ -49,7 +49,10 @@ function TradesList() {
             подробнее
           </Button>
         </div>
-      <Button type="primary" htmlType="submit" className="btn-trade-list-back" onClick={handleClick}>
+      <Button type="primary" className="btn-trade-list-text-to-employee" onClick={handleClick}>
+        написать сотруднику
+      </Button>
+      <Button type="primary" className="btn-trade-list-back" onClick={handleClick}>
         назад
       </Button>
       {showTradeList && navigate('/mytrades')}

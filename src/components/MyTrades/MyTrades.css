@@ -17,10 +17,15 @@
 .my-trades-content-btns {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 10px;
 }
 
 .btn-mytrades {
   margin-right: 10px;
+}
+
+.btn-trade-list-text-to-employee{
+  width: 100%;
 }
 
 .my-trades-description {

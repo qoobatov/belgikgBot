@@ -20,6 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* text-align: center; */
   /* height: 100vh; */
 }
 
@@ -35,6 +36,15 @@
 .bayer-services-content h3 {
   text-align: center;
   /* margin-bottom: 10px; */
+}
+
+.btns-bayer-services{
+display: flex;
+justify-content: space-between;
+}
+
+.btn-bayer-services-back{
+  width: 110px;
 }
 
 .ant-form-item {
