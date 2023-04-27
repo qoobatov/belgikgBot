@@ -5,6 +5,7 @@ import MyTrades from "./components/MyTrades/MyTrades";
 import TradesList from "./components/TradesList/TradesList";
 import NewOrder from "./components/NewOrder/NewOrder";
 import BayerServices from "./components/BayerServices/BayerServices";
+import Production from "./components/Production/Production";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/tradelist" element={<TradesList />} />
             <Route path="/neworder" element={<NewOrder />} />
             <Route path="/bayerservices" element={<BayerServices />} />
+            <Route path="/production" element={<Production />} />
           </Routes>
         </Router>
       </div>

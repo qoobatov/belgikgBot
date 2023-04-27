@@ -32,7 +32,7 @@ function MyTrades() {
             className="btn-mytrades"
             onClick={handleClick}
           >
-            Мои сделки
+            Мои заказы
           </Button>
           <Button
             type="primary"
@@ -42,7 +42,7 @@ function MyTrades() {
           </Button>
         </div>
         <Button type="primary" className="btn-trade-list-text-to-employee">
-        Написать сотруднику
+        Шоппинг тур
       </Button>
         {showTradeList && navigate("/tradelist")}
         {showNewOrder && navigate("/neworder")}

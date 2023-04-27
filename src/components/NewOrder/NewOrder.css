@@ -24,9 +24,11 @@
   margin-bottom: 20px;
 }
 
-.btn-new-order {
+.btn-new-order-buy {
+  padding: 0 7px;
   margin-bottom: 15px;
 }
+
 .btn-new-order-text-to-employee{
   margin-bottom: 15px;
 }

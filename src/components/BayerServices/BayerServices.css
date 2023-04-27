@@ -43,9 +43,16 @@ justify-content: space-between;
 margin-top: 10px;
 
 }
+.btn-bayer-services-send-form{
+  margin-top: 25px;
+}
 
 .btn-bayer-services-back{
-  width: 110px;
+  width: 100%;
+}
+
+.btn-bayer-services-shopping{
+  padding: 0 50px;
 }
 
 .ant-form-item {

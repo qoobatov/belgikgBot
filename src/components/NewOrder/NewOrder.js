@@ -17,18 +17,22 @@ function NewOrder() {
     setshowBayerServices(true);
     navigate("/bayerservices");
   };
+  const onClickProduction = () => {
+    setshowBayerServices(true);
+    navigate("/production");
+  };
 
   return (
     <>
       <div className="new-order-container">
         <div className="new-order-content">
-          <h3>Байер и производство:</h3>
+          <h3>Покупка и Производство:</h3>
           <div className="new-order-btn-group">
-            <Button type="primary" htmlType="submit" className="btn-new-order" onClick={onClickBayerServices}>
-              Услуги байера
+            <Button type="primary" className="btn-new-order-buy" onClick={onClickBayerServices}>
+              Оптовые покупки
             </Button>
 
-            <Button type="primary" htmlType="submit" className="btn-new-order">
+            <Button type="primary" className="btn-new-order" onClick={onClickProduction}>
               Производство
             </Button>
           </div>
@@ -36,7 +40,7 @@ function NewOrder() {
             type="primary"
             className="btn-new-order-text-to-employee"
           >
-            Написать сотруднику
+            шоппинг тур
           </Button>
           <Button
             type="primary"

@@ -23,24 +23,13 @@ function BayerServices() {
     setshowNewOrder(true);
     navigate("/neworder");
   };
-  const { Option } = Select;
-  const CheckboxGroup = Checkbox.Group;
 
-  const options = [
-    { label: "Женский", value: "female" },
-    { label: "Мужской", value: "male" },
-    { label: "Детский", value: "kids" },
-  ];
-
-  function handleChangeType(checkedValues) {
-    console.log("checked = ", checkedValues);
-  }
 
   return (
     <>
       <div className="bayer-services-container">
         <div className="bayer-services-content">
-          <h3>Услуги байера:</h3>
+          <h3> Оптовые покупки:</h3>
           <Form
             labelCol={{
               span: 15,
@@ -54,56 +43,13 @@ function BayerServices() {
               maxWidth: 600,
             }}
           >
-            <Form.Item label="Тип товара:">
-              <CheckboxGroup options={options} onChange={handleChangeType} />
-
-              <Form.Item label="Цена за шт.  (выбрать валюту):">
-                <div className="quantity-currency">
-                  <Input type="number" style={{ width: "240px" }} autofocus />
-                  <Select defaultValue="KGZ" style={{ width: 80 }}>
-                    <Option value="GBP">KGZ</Option>
-                    <Option value="USD">USD</Option>
-                    <Option value="EUR">EUR</Option>
-                    <Option value="RUB">RUB</Option>
-                    <Option value="KZT">KZT</Option>
-                  </Select>
-                </div>
-              </Form.Item>
-
-              <Form.Item label="Количество:">
-                <Input type="number" />
+              <Form.Item label="Что вы хотите купить?">
+                <Input />
               </Form.Item>
               <Form.Item label="Описание товара:">
-                <TextArea rows={3} />
+                <TextArea rows={7} />
               </Form.Item>
-            </Form.Item>
-            <Form.Item label="Дата:">
-              <DatePicker style={{ width: "320px" }} placeholder="выбор даты" />
-            </Form.Item>
-            <Form.Item label="Адрес доставки:">
-              <Input />
-            </Form.Item>
-            <Form.Item label="Город доставки:">
-              <Input />
-            </Form.Item>
-            <Form.Item
-              label="Прикрепить фото:"
-              valuePropName="fileList"
-              getValueFromEvent={normFile}
-            >
-              <Upload action="/upload.do" listType="picture-card" maxCount={4}>
-                <div>
-                  <PlusOutlined />
-                  <div
-                    style={{
-                      marginTop: 5,
-                    }}
-                  >
-                    добавить
-                  </div>
-                </div>
-              </Upload>
-            </Form.Item>
+            
           </Form>
 
           <Button
@@ -122,12 +68,7 @@ function BayerServices() {
             >
               назад
             </Button>
-            <Button
-              type="primary"
-              className="btn-bayer-services-text-to-employee"
-            >
-              написать сотруднику
-            </Button>
+
           </div>
           {showNewOrder && navigate("/neworder")}
         </div>

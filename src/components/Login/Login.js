@@ -1,6 +1,6 @@
 import React from "react";
 import "./Login.css";
-import { Button, Form, Input } from "antd";
+import { Button, Form, Input, Checkbox } from "antd";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import clients from "../../clients.json";
@@ -68,6 +68,16 @@ function Login() {
             ]}
           >
             <Input.Password placeholder="Пароль" />
+          </Form.Item>
+          <Form.Item
+            name="remember"
+            valuePropName="checked"
+            wrapperCol={{
+              offset: 8,
+              span: 16,
+            }}
+          >
+            <Checkbox style={{marginLeft: "auto"}}>Remember me</Checkbox>
           </Form.Item>
 
           <Form.Item>
