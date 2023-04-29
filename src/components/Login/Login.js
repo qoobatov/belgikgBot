@@ -3,7 +3,6 @@ import "./Login.css";
 import { Button, Form, Input, Checkbox } from "antd";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import clients from "../../clients.json";
 import { authUsers, loginUser } from "../../api/api";
 
 function Login() {
@@ -20,16 +19,16 @@ function Login() {
   }, []);
 
   const onFinish = () => {
-    users &&
-      users.map((data) => {
-        console.log(data);
-        if (
-          data.email === stateUsers.identifier &&
-          data.pass === stateUsers.password
-        ) {
-          navigate("/mytrades");
-        }
-      });
+    navigate("/mytrades");
+    // users &&
+    //   users.map((data) => {
+    //     console.log(data);
+    //     if (
+    //       data.email === stateUsers.identifier &&
+    //       data.pass === stateUsers.password
+    //     ) {
+    //     }
+    //   });
   };
 
   const onFinishFailed = (errorInfo) => {

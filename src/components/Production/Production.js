@@ -66,24 +66,7 @@ function Production() {
           ],
         },
       ],
-    },
-    {
-      value: "",
-      label: "Способ",
-      children: [
-        {
-          value: "",
-          label: "Testing",
-          children: [
-            {
-              value: "",
-              label: "",
-            },
-          ],
-        },
-      ],
-    },
-  ];
+    }]
 
   const { RangePicker } = DatePicker;
 
@@ -104,6 +87,8 @@ function Production() {
           formValues.nameOrder +
           "\nОписание заказа: " +
           formValues.desc +
+          "\nКатегория: " +
+          formValues.category +
           "\nКоличество: " +
           formValues.quantity +
           "\nУсловия оплаты: " +
@@ -157,15 +142,15 @@ function Production() {
             </Form.Item>
             <Form.Item label="Категория:">
               <Select
+                name="category"
                 placeholder="Выберите категорию"
-                onChange={onChange}
+                // onChange={onChangeSelected}
                 options={[
                   { value: "female", label: "Женская одежда" },
                   { value: "male", label: "Мужская одежда" },
                   { value: "kids", label: "Детская одежда" },
                   { value: "specialWear", label: "Спецодежда" },
                 ]}
-                name="category"
               />
             </Form.Item>
             <Form.Item label="Описание заказа:">
