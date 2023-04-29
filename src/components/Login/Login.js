@@ -1,30 +1,48 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Login.css";
 import { Button, Form, Input, Checkbox } from "antd";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import clients from "../../clients.json";
+import { authUsers, loginUser } from "../../api/api";
 
 function Login() {
   const navigate = useNavigate();
   const [error, setError] = useState(false);
+  const [users, setUsers] = useState();
+  const [stateUsers, setStateUsers] = useState({
+    identifier: "",
+    password: "",
+  });
 
-  const onFinish = (values) => {
-    const { username, password } = values;
-    const employee = clients.users.find(
-      (user) => user.username === username && user.password === password
-    );
-    if (employee) {
-      navigate("/mytrades");
-      // Перенаправляем на другую страницу
-    } else {
-      setError(true);
-      console.log("Нету такого пользователя");
-    }
+  useEffect(() => {
+    authUsers().then((res) => setUsers(res));
+  }, []);
+
+  const onFinish = () => {
+    users &&
+      users.map((data) => {
+        console.log(data);
+        if (
+          data.email === stateUsers.identifier &&
+          data.pass === stateUsers.password
+        ) {
+          navigate("/mytrades");
+        }
+      });
   };
 
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);
+  };
+
+  const changeHandle = (e) => {
+    setStateUsers((stateUsers) => {
+      return {
+        ...stateUsers,
+        [e.target.name]: e.target.value,
+      };
+    });
   };
 
   return (
@@ -46,7 +64,7 @@ function Login() {
             </span>
           )}
           <Form.Item
-            name="username"
+            name="Username"
             placeholder="Username"
             rules={[
               {
@@ -55,7 +73,11 @@ function Login() {
               },
             ]}
           >
-            <Input placeholder="Login" />
+            <Input
+              placeholder="Login"
+              onChange={changeHandle}
+              name="identifier"
+            />
           </Form.Item>
 
           <Form.Item
@@ -67,7 +89,11 @@ function Login() {
               },
             ]}
           >
-            <Input.Password placeholder="Пароль" />
+            <Input.Password
+              placeholder="Пароль"
+              onChange={changeHandle}
+              name="password"
+            />
           </Form.Item>
           <Form.Item
             name="remember"
@@ -77,7 +103,7 @@ function Login() {
               span: 16,
             }}
           >
-            <Checkbox style={{marginLeft: "auto"}}>Remember me</Checkbox>
+            <Checkbox style={{ marginLeft: "auto" }}>Remember me</Checkbox>
           </Form.Item>
 
           <Form.Item>

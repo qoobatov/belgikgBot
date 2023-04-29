@@ -1,0 +1,19 @@
+.production-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.production-content{
+    width: 330px;
+    padding: 10px 5px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-production-back{
+    width: 100%;
+}
+
+.btn-production-send-form{
+}
